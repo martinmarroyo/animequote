@@ -19,10 +19,28 @@ Examples:
 
 Get a quote by title:
 ```bash
-animequote -title "One Piece"
+./animequote -title "One Piece"
 ```
 
 Get a quote by character name:
 ```bash
-animequote -character Guts
+./animequote -character Guts
 ```
+
+## Run using Docker
+
+To run this using Docker, do the following:
+
+1. Build the image
+    > E.g. (from the root folder)
+    > ```bash
+    > > docker build -t animequote .
+    > ```
+2. Generate a quote from the docker container
+    > E.g. 
+    > ```bash
+    > > docker run animequote -title "One Piece"`
+    >
+    > Roronoa Zoro, from the anime One Piece, says:
+    > "Being strong isn't just about having power or move, it about one's spirit"
+    > ```
